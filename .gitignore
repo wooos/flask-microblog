@@ -1,6 +1,7 @@
 # Ignore directories
 venv/
 __pycache__/
+logs/
 
 # Ignore files
 app.db
