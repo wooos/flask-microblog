@@ -1,0 +1,252 @@
+# Chinese translations for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-03-15 22:35+0800\n"
+"PO-Revision-Date: 2022-03-15 10:45+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: app/__init__.py:22
+msgid "Please log in to access this page."
+msgstr "请登录以访问该页面."
+
+#: app/forms.py:10 app/forms.py:17 app/forms.py:35
+msgid "Username"
+msgstr "用户名"
+
+#: app/forms.py:11 app/forms.py:19 app/forms.py:65
+msgid "Password"
+msgstr "密码"
+
+#: app/forms.py:12
+msgid "Remember Me"
+msgstr "记住我"
+
+#: app/forms.py:13 app/templates/login.html:5
+msgid "Sign In"
+msgstr "登录"
+
+#: app/forms.py:18 app/forms.py:60
+msgid "Email"
+msgstr "邮箱"
+
+#: app/forms.py:20 app/forms.py:67
+msgid "Repeat Password"
+msgstr "确认密码"
+
+#: app/forms.py:21 app/templates/register.html:5
+msgid "Register"
+msgstr "注册"
+
+#: app/forms.py:26 app/forms.py:47
+msgid "Please use a different username."
+msgstr "请使用其他用户名."
+
+#: app/forms.py:31
+msgid "Please use a different email address."
+msgstr "请使用其他邮箱."
+
+#: app/forms.py:36
+msgid "Abbot me"
+msgstr "关于我"
+
+#: app/forms.py:37 app/forms.py:51 app/forms.py:56
+msgid "Submit"
+msgstr "提交"
+
+#: app/forms.py:55
+msgid "Say something"
+msgstr "说些什么"
+
+#: app/forms.py:61 app/forms.py:68
+msgid "Request Password Reset"
+msgstr "重置密码"
+
+#: app/routes.py:29
+msgid "Your post is now live!"
+msgstr "你的帖子发布成功!"
+
+#: app/routes.py:47
+msgid "Invalid username or password"
+msgstr "无效的用户名或密码"
+
+#: app/routes.py:71
+msgid "Congratulations, you are now registered user!"
+msgstr "恭喜，你现在是注册用户!"
+
+#: app/routes.py:97
+msgid "Your changes have been saved."
+msgstr "您的修改已经被保存."
+
+#: app/routes.py:111
+#, python-format
+msgid "User %(username)s not found."
+msgstr "用户 %(username)s 未找到."
+
+#: app/routes.py:114
+msgid "You cannot follow yourself!"
+msgstr "你不能关注自己!"
+
+#: app/routes.py:118
+#, python-format
+msgid "You are following %(username)s!"
+msgstr "你正在关注 %(username)s!"
+
+#: app/routes.py:135
+msgid "You cannot unfollow yourself!"
+msgstr "你不能取消关注自己!"
+
+#: app/routes.py:139
+#, python-format
+msgid "You are not following %(username)s!"
+msgstr "你已取消关注 %(username)s!"
+
+#: app/routes.py:165
+msgid "Check your email for the instructions to reset your password"
+msgstr "查看您的电子邮件以获取有关重置密码的说明"
+
+#: app/routes.py:180
+msgid "Your password has been reset."
+msgstr "你的密码已经被重置."
+
+#: app/templates/404.html:4
+msgid "File Not Found"
+msgstr "404，页面不存在"
+
+#: app/templates/500.html:4
+msgid "An unexpected error has occurred"
+msgstr "发生意外错误"
+
+#: app/templates/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr "已通知管理员，给你带来的不便请谅解！"
+
+#: app/templates/_post.html:12
+#, python-format
+msgid "said %(formnow)s"
+msgstr "%(formnow)s 说"
+
+#: app/templates/base.html:4
+msgid "Welcome to Flask Microblog"
+msgstr "欢迎来到 Flask Microblog"
+
+#: app/templates/base.html:30
+msgid "Home"
+msgstr "首页"
+
+#: app/templates/base.html:31
+msgid "Explore"
+msgstr "发现"
+
+#: app/templates/base.html:36
+msgid "Profile"
+msgstr "个人信息"
+
+#: app/templates/base.html:37
+msgid "Logout"
+msgstr "退出"
+
+#: app/templates/base.html:39
+msgid "Login"
+msgstr "登录"
+
+#: app/templates/edit_profile.html:5
+msgid "Edit Profile"
+msgstr "编辑个人信息"
+
+#: app/templates/index.html:5
+#, python-format
+msgid "Hi, %(username)s!"
+msgstr "您好, %(username)s!"
+
+#: app/templates/index.html:17 app/templates/user.html:44
+msgid "Newer posts"
+msgstr "新帖子"
+
+#: app/templates/index.html:22 app/templates/user.html:49
+msgid "Older posts"
+msgstr "旧帖子"
+
+#: app/templates/login.html:12
+msgid "New User? "
+msgstr "新用户? "
+
+#: app/templates/login.html:12
+msgid "Click to Register!"
+msgstr "点击注册!"
+
+#: app/templates/login.html:14
+msgid "Forgot Your Password?"
+msgstr "忘记密码?"
+
+#: app/templates/login.html:15
+msgid "Click to Reset It"
+msgstr "点击重置"
+
+#: app/templates/reset_password.html:5
+msgid "Reset Your Password"
+msgstr "重置您的密码"
+
+#: app/templates/reset_password_request.html:5
+msgid "Reset Password"
+msgstr "重置密码"
+
+#: app/templates/user.html:13
+msgid "Last seen on: "
+msgstr "最后在线: "
+
+#: app/templates/user.html:15
+msgid "followers"
+msgstr "粉丝"
+
+#: app/templates/user.html:15
+msgid "following"
+msgstr "关注"
+
+#: app/templates/user.html:17
+msgid "Edit your profile"
+msgstr "编辑个人信息"
+
+#: app/templates/email/reset_password.html:1
+#, python-format
+msgid ""
+"<p>Dear %(username)s,</p>\n"
+"<p>\n"
+"    To reset your password\n"
+"    <a href='%(link)s'>\n"
+"        click here\n"
+"    </a>.\n"
+"</p>\n"
+"<p>Alternatively, you can paste the following link in your browser's "
+"address bar:</p>\n"
+"<p>%(link)s</p>\n"
+"<p>If you have not requested a password reset simply ignore this "
+"message.</p>\n"
+"<p>Sincerely,</p>\n"
+"<p>The Flask Microblog Team</p>"
+msgstr ""
+"<p>尊敬的 %(username)s,</p>\n"
+"<p>\n"
+"    重置密码请\n"
+"    <a href='%(link)s'>\n"
+"        点击这里\n"
+"    </a>.\n"
+"</p>\n"
+"<p>或者, 你可以复制下面的链接地址到您的浏览器中</p>\n"
+"<p>%(link)s</p>\n"
+"<p>如果您没有请求密码重置，请忽略此消息。</p>\n"
+"<p>真诚地,</p>\n"
+"<p>Flask Microblog 团队</p>"
+

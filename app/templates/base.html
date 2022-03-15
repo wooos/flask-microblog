@@ -1,11 +1,13 @@
 {% extends 'bootstrap/base.html' %}
 
 {% block title %}
-    {% if title %}{{ title }} - Flask Microblog{% else %}Welcome to Microblog{% endif %}
+    {% if title %}{{ title }} - Flask Microblog{% else %}{{ _("Welcome to Flask Microblog") }}{% endif %}
 {% endblock %}
 
 {% block scripts %}
+    {{ super() }}
     {{ moment.include_moment() }}
+    {{ moment.lang(g.locale) }}
 {% endblock%}
 
 {% block navbar %}
@@ -25,16 +27,16 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
-                <li><a href="/explore">Explore</a></li>
+                <li><a href="/">{{ _("Home") }}</a></li>
+                <li><a href="/explore">{{ _("Explore") }}</a></li>
               </ul>
               
               <ul class="nav navbar-nav navbar-right">
                 {% if current_user.is_authenticated %}
-                <li><a href="/user/{{ current_user.username }}">Profile</a></li>
-                <li><a href="/logout">Logout</a></li>
+                <li><a href="/user/{{ current_user.username }}">{{ _("Profile") }}</a></li>
+                <li><a href="/logout">{{ _("Logout") }}</a></li>
                 {% else %}
-                <li><a href="/login">Login</a></li>
+                <li><a href="/login">{{ _("Login") }}</a></li>
                 {% endif%}
               </ul>
             </div><!-- /.navbar-collapse -->
