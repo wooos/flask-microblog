@@ -4,6 +4,10 @@
     {% if title %}{{ title }} - Flask Microblog{% else %}Welcome to Microblog{% endif %}
 {% endblock %}
 
+{% block scripts %}
+    {{ moment.include_moment() }}
+{% endblock%}
+
 {% block navbar %}
     <nav class="navbar navbar-default">
         <div class="container-fluid">
