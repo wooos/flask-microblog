@@ -5,3 +5,4 @@ logs/
 
 # Ignore files
 app.db
+.env

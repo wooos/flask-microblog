@@ -35,22 +35,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/">Flask Microblog</a>
+              <a class="navbar-brand" href="{{ url_for('main.index') }}">Flask Microblog</a>
             </div>
             
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="/">{{ _("Home") }}</a></li>
-                <li><a href="/explore">{{ _("Explore") }}</a></li>
+                <li><a href="{{ url_for('main.index') }}">{{ _("Home") }}</a></li>
+                <li><a href="{{ url_for('main.explore') }}">{{ _("Explore") }}</a></li>
               </ul>
               
               <ul class="nav navbar-nav navbar-right">
                 {% if current_user.is_authenticated %}
                 <li><a href="/user/{{ current_user.username }}">{{ _("Profile") }}</a></li>
-                <li><a href="/logout">{{ _("Logout") }}</a></li>
+                <li><a href="{{ url_for('auth.logout') }}">{{ _("Logout") }}</a></li>
                 {% else %}
-                <li><a href="/login">{{ _("Login") }}</a></li>
+                <li><a href="{{ url_for('auth.login') }}">{{ _("Login") }}</a></li>
                 {% endif%}
               </ul>
             </div><!-- /.navbar-collapse -->
