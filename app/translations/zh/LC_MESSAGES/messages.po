@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-03-15 22:35+0800\n"
+"POT-Creation-Date: 2022-03-16 10:37+0800\n"
 "PO-Revision-Date: 2022-03-15 10:45+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh\n"
@@ -74,52 +74,56 @@ msgstr "说些什么"
 msgid "Request Password Reset"
 msgstr "重置密码"
 
-#: app/routes.py:29
+#: app/routes.py:37
 msgid "Your post is now live!"
 msgstr "你的帖子发布成功!"
 
-#: app/routes.py:47
+#: app/routes.py:55
 msgid "Invalid username or password"
 msgstr "无效的用户名或密码"
 
-#: app/routes.py:71
+#: app/routes.py:79
 msgid "Congratulations, you are now registered user!"
 msgstr "恭喜，你现在是注册用户!"
 
-#: app/routes.py:97
+#: app/routes.py:105
 msgid "Your changes have been saved."
 msgstr "您的修改已经被保存."
 
-#: app/routes.py:111
+#: app/routes.py:119
 #, python-format
 msgid "User %(username)s not found."
 msgstr "用户 %(username)s 未找到."
 
-#: app/routes.py:114
+#: app/routes.py:122
 msgid "You cannot follow yourself!"
 msgstr "你不能关注自己!"
 
-#: app/routes.py:118
+#: app/routes.py:126
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "你正在关注 %(username)s!"
 
-#: app/routes.py:135
+#: app/routes.py:143
 msgid "You cannot unfollow yourself!"
 msgstr "你不能取消关注自己!"
 
-#: app/routes.py:139
+#: app/routes.py:147
 #, python-format
 msgid "You are not following %(username)s!"
 msgstr "你已取消关注 %(username)s!"
 
-#: app/routes.py:165
+#: app/routes.py:173
 msgid "Check your email for the instructions to reset your password"
 msgstr "查看您的电子邮件以获取有关重置密码的说明"
 
-#: app/routes.py:180
+#: app/routes.py:188
 msgid "Your password has been reset."
 msgstr "你的密码已经被重置."
+
+#: app/translate.py:11
+msgid "Error: the translation service is not configured."
+msgstr "错误: 翻译服务没有正确配置."
 
 #: app/templates/404.html:4
 msgid "File Not Found"
@@ -138,27 +142,35 @@ msgstr "已通知管理员，给你带来的不便请谅解！"
 msgid "said %(formnow)s"
 msgstr "%(formnow)s 说"
 
+#: app/templates/_post.html:22
+msgid "Translate"
+msgstr "翻译"
+
 #: app/templates/base.html:4
 msgid "Welcome to Flask Microblog"
 msgstr "欢迎来到 Flask Microblog"
 
-#: app/templates/base.html:30
+#: app/templates/base.html:21
+msgid "Error: Could not contact server."
+msgstr "错误: 连接服务失败."
+
+#: app/templates/base.html:44
 msgid "Home"
 msgstr "首页"
 
-#: app/templates/base.html:31
+#: app/templates/base.html:45
 msgid "Explore"
 msgstr "发现"
 
-#: app/templates/base.html:36
+#: app/templates/base.html:50
 msgid "Profile"
 msgstr "个人信息"
 
-#: app/templates/base.html:37
+#: app/templates/base.html:51
 msgid "Logout"
 msgstr "退出"
 
-#: app/templates/base.html:39
+#: app/templates/base.html:53
 msgid "Login"
 msgstr "登录"
 

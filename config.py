@@ -16,4 +16,5 @@ class Config(object):
     ADMINS = ['819844849@qq.com']
     POSTS_PER_PAGE = 5
     LANGUAGES = ['en', 'zh']
-    
+    BAIDU_TRANSLATOR_ID = os.environ.get('BAIDU_TRANSLATOR_ID')
+    BAIDU_TRANSLATOR_KEY = os.environ.get('BAIDU_TRANSLATOR_KEY')
