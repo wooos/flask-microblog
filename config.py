@@ -20,3 +20,4 @@ class Config(object):
     LANGUAGES = ['en', 'zh']
     BAIDU_TRANSLATOR_ID = os.environ.get('BAIDU_TRANSLATOR_ID')
     BAIDU_TRANSLATOR_KEY = os.environ.get('BAIDU_TRANSLATOR_KEY')
+    ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
