@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-03-23 16:39+0800\n"
+"POT-Creation-Date: 2022-03-25 16:56+0800\n"
 "PO-Revision-Date: 2022-03-15 10:45+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh\n"
@@ -87,6 +87,7 @@ msgid "Abbot me"
 msgstr "关于我"
 
 #: app/main/forms.py:12 app/main/forms.py:26 app/main/forms.py:31
+#: app/main/forms.py:48
 msgid "Submit"
 msgstr "提交"
 
@@ -94,40 +95,52 @@ msgstr "提交"
 msgid "Say something"
 msgstr "说些什么"
 
-#: app/main/forms.py:35 app/main/routes.py:141
+#: app/main/forms.py:35 app/main/routes.py:142
 msgid "Search"
 msgstr "搜索"
 
-#: app/main/routes.py:36
+#: app/main/forms.py:46
+msgid "Message"
+msgstr "消息"
+
+#: app/main/routes.py:37
 msgid "Your post is now live!"
 msgstr "你的帖子发布成功!"
 
-#: app/main/routes.py:68
+#: app/main/routes.py:69
 msgid "Your changes have been saved."
 msgstr "您的修改已经被保存."
 
-#: app/main/routes.py:82
+#: app/main/routes.py:83
 #, python-format
 msgid "User %(username)s not found."
 msgstr "用户 %(username)s 未找到."
 
-#: app/main/routes.py:85
+#: app/main/routes.py:86
 msgid "You cannot follow yourself!"
 msgstr "你不能关注自己!"
 
-#: app/main/routes.py:89
+#: app/main/routes.py:90
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "你正在关注 %(username)s!"
 
-#: app/main/routes.py:104
+#: app/main/routes.py:105
 msgid "You cannot unfollow yourself!"
 msgstr "你不能取消关注自己!"
 
-#: app/main/routes.py:108
+#: app/main/routes.py:109
 #, python-format
 msgid "You are not following %(username)s!"
 msgstr "你已取消关注 %(username)s!"
+
+#: app/main/routes.py:164
+msgid "Your message has been sent."
+msgstr "你的密码已经被重置."
+
+#: app/main/routes.py:166
+msgid "Send Message"
+msgstr "发送消息"
 
 #: app/templates/_post.html:16
 #, python-format
@@ -146,23 +159,27 @@ msgstr "欢迎来到 Flask Microblog"
 msgid "Error: Could not contact server."
 msgstr "错误: 连接服务失败."
 
-#: app/templates/base.html:88
+#: app/templates/base.html:110
 msgid "Home"
 msgstr "首页"
 
-#: app/templates/base.html:89
+#: app/templates/base.html:111
 msgid "Explore"
 msgstr "发现"
 
-#: app/templates/base.html:103
+#: app/templates/base.html:127 app/templates/messages.html:4
+msgid "Messages"
+msgstr "消息"
+
+#: app/templates/base.html:139
 msgid "Profile"
 msgstr "个人信息"
 
-#: app/templates/base.html:104
+#: app/templates/base.html:140
 msgid "Logout"
 msgstr "退出"
 
-#: app/templates/base.html:106
+#: app/templates/base.html:142
 msgid "Login"
 msgstr "登录"
 
@@ -175,13 +192,21 @@ msgstr "编辑个人信息"
 msgid "Hi, %(username)s!"
 msgstr "您好, %(username)s!"
 
-#: app/templates/index.html:17 app/templates/user.html:44
+#: app/templates/index.html:17 app/templates/user.html:52
 msgid "Newer posts"
 msgstr "新帖子"
 
-#: app/templates/index.html:22 app/templates/user.html:49
+#: app/templates/index.html:22 app/templates/user.html:57
 msgid "Older posts"
 msgstr "旧帖子"
+
+#: app/templates/messages.html:12
+msgid "Newer messages"
+msgstr "新消息"
+
+#: app/templates/messages.html:17
+msgid "Older messages"
+msgstr "旧消息"
 
 #: app/templates/search.html:4
 msgid "Search Results"
@@ -195,6 +220,11 @@ msgstr "上一个结果"
 msgid "Next results"
 msgstr "下一个结果"
 
+#: app/templates/send_message.html:5
+#, python-format
+msgid "Send Message to %(recipient)s"
+msgstr "向 %(recipient)s 发送消息"
+
 #: app/templates/user.html:13
 msgid "Last seen on: "
 msgstr "最后在线: "
@@ -207,7 +237,11 @@ msgstr "粉丝"
 msgid "following"
 msgstr "关注"
 
-#: app/templates/user.html:17
+#: app/templates/user.html:20
+msgid "Send private message"
+msgstr "发送个人消息"
+
+#: app/templates/user.html:25
 msgid "Edit your profile"
 msgstr "编辑个人信息"
 
@@ -216,10 +250,12 @@ msgid "Last seen on"
 msgstr "最后在线: "
 
 #: app/templates/user_popup.html:14
+#, python-format
 msgid "%(count)d followers"
 msgstr "%(count)d 粉丝"
 
 #: app/templates/user_popup.html:15
+#, python-format
 msgid "%(count)d following"
 msgstr "%(count)d 关注"
 
