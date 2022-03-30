@@ -21,3 +21,4 @@ class Config(object):
     BAIDU_TRANSLATOR_ID = os.environ.get('BAIDU_TRANSLATOR_ID')
     BAIDU_TRANSLATOR_KEY = os.environ.get('BAIDU_TRANSLATOR_KEY')
     ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
+    REDIS_URL = os.environ.get('REDIS_URL') or 'redis://'
